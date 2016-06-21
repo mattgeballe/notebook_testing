@@ -9,7 +9,7 @@ env:
     matrix:
         - NB_DIR=Notebooks/Project1
         - NB_DIR=Notebooks/Project2
-        - NB_DIR=Drafst/Project3
+        - NB_DIR=Drafts/Project3
 
 install:
 - pip install --upgrade pip
