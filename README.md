@@ -1,2 +1,2 @@
 # notebook_testing
-Explorations in testing notebooks 
+Explorations in using Jupyter Notebooks in testing frameworks like pytest and CI platforms like Travis.
