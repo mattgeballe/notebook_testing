@@ -1,0 +1,28 @@
+language: python
+cache: pip
+
+python:
+- '2.7'
+- '3.5'
+
+env:
+    matrix:
+        - NB_DIR=Notebooks/Project1
+        - NB_DIR=Notebooks/Project2
+        - NB_DIR=Drafst/Project3
+
+install:
+- pip install --upgrade pip
+- pip install -r base_requirements.txt
+- if [ -a $NB_DIR/requirements.txt ]; then pip install -r $NB_DIR/requirements.txt; fi
+
+script:
+- py.test -v
+
+after_success:
+- echo SUCCESS!
+
+after_failure:
+- echo FAIL!
+
+after_script:
